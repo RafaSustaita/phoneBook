@@ -109,7 +109,7 @@ app.put('/api/persons/:id', (request, response) => {
 });
 
 
-const PORT = 'http://localhost:3001/api/persons'
+const PORT = process.env.PORT || 3001
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`)
 })
